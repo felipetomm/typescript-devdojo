@@ -10,9 +10,9 @@ var str3 = str2 + " \n                    to Felipe";
 console.log(str3);
 function func() { }
 ;
-if (bool != null) { }
+if (bool !== null) { }
 ;
-if (bool != undefined) { }
+if (bool !== undefined) { }
 ;
 if (bool) {
     //var i: number; //Variavel se torna global
@@ -38,3 +38,10 @@ var Day;
 })(Day || (Day = {}));
 var dia = Day.Monday;
 console.log("Day: " + Day[dia]);
+//Função
+function add(v1, v2, v3) {
+    if (v3 !== undefined)
+        return v1 + v2 + v3;
+    return v1 + v2;
+}
+console.log(add(1, 2, 3));
